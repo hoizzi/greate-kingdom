@@ -46,6 +46,7 @@ body {
     width: 720px;
     height: 720px;
     border: 10px solid rgb(70, 70, 70);
+    margin: 10px;
 }
 
 .tile:hover {
@@ -56,4 +57,248 @@ body {
 .tile:active {
     border-left: 8px solid rgb(70, 70, 70);
     border-top: 8px solid rgb(70, 70, 70);
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+    width: 760px;
+}
+
+#topNav {
+    display:flex;
+    align-items: left;
+    justify-self: center;
+    width: 50%;
+}
+
+#topRightNav {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 50%;
+}
+
+#winText {
+    width: 180px;
+    height: 90px;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content :center;
+    align-items: center;
+    color: beige
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
+    width: 760px;
+}
+
+#bottomNav {
+    display:flex;
+    align-items: right;
+    justify-self: center;
+    width: 50%;
+}
+
+#bottomRightNav {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 50%;
+}
+
+#newGameBtn {
+    width: 180px;
+    height: 90px;
+    border: 6px solid rgb(70, 70, 70);
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+    display: flex;
+    justify-content :center;
+    align-items: center;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#newGameBtn:hover {
+    border-left: 9px solid rgb(70, 70, 70);
+    border-top: 9px solid rgb(70, 70, 70);
+}
+
+#newGameBtn:active {
+    border-left: 13px solid rgb(70, 70, 70);
+    border-top: 13px solid rgb(70, 70, 70);
+}
+
+#currentTurn {
+    width: 90px;
+    height: 90px;
+    border: 6px solid rgb(70, 70, 70);
+    box-sizing: border-box;
+    background-color: brown;
+    margin-left: 10px;
+}
+
+#currentTurn:hover {
+    border-left: 9px solid rgb(70, 70, 70);
+    border-top: 9px solid rgb(70, 70, 70);
+}
+
+#currentTurn:active {
+    border-left: 13px solid rgb(70, 70, 70);
+    border-top: 13px solid rgb(70, 70, 70);
+}
+
+#passTurn {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+}
+
+#redPassed {
+    width: 90px;
+    height: 50%;
+    color: brown;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content :center;
+    align-items: center;
+}
+
+#bluePassed {
+    width: 90px;
+    height: 50%;
+    color: rgb(17, 17, 124);
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content :center;
+    align-items: center;
+}
+
+#backsiesBtn {
+    width: 180px;
+    height: 90px;
+    border: 6px solid rgb(70, 70, 70);
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+    display: flex;
+    justify-content :center;
+    align-items: center;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#backsiesBtn:hover {
+    border-left: 9px solid rgb(70, 70, 70);
+    border-top: 9px solid rgb(70, 70, 70);
+}
+
+#backsiesBtn:active {
+    border-left: 13px solid rgb(70, 70, 70);
+    border-top: 13px solid rgb(70, 70, 70);
+}
+
+#redPoint {
+    width: 120px;
+    height: 90px;
+    color: brown;
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    justify-content :center;
+    align-items: center;
+}
+
+#bluePoint {
+    width: 120px;
+    height: 90px;
+    color: rgb(17, 17, 124);
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    justify-content :center;
+    align-items: center;
+}
+
+@keyframes blockClickRed {
+    from {
+        background-color: brown;
+    }
+    to {
+        background-color: lightgray;
+    }
+}
+
+@keyframes blockClickBlue {
+    from {
+        background-color: rgb(17, 17, 124);
+    }
+    to {
+        background-color: lightgray;
+    }
+}
+
+.blockClickRed{
+    background-color: brown;
+    animation: blockClickRed 0.2s ease-out;
+    border: 1px solid rgb(70, 70, 70);
+    box-sizing: border-box;
+}
+
+.blockClickRed:hover {
+    border-left: 4px solid rgb(70, 70, 70);
+    border-top: 4px solid rgb(70, 70, 70);
+}
+
+.blockClickBlue{
+    background-color: rgb(17, 17, 124);
+    animation: blockClickBlue 0.5s ease-out;
+    border: 1px solid rgb(70, 70, 70);
+    box-sizing: border-box;
+}
+
+.blockClickBlue:hover {
+    border-left: 4px solid rgb(70, 70, 70);
+    border-top: 4px solid rgb(70, 70, 70);
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .tile:hover {
+        border-left: 1px solid rgb(70, 70, 70);
+        border-top: 1px solid rgb(70, 70, 70);
+    }
+
+    #newGameBtn:hover {
+        border-left: 6px solid rgb(70, 70, 70);
+        border-top: 6px solid rgb(70, 70, 70);
+    }
+
+    #currentTurn:hover {
+        border-left: 6px solid rgb(70, 70, 70);
+        border-top: 6px solid rgb(70, 70, 70);
+    }
+
+    #backsiesBtn:hover {
+        border-left: 6px solid rgb(70, 70, 70);
+        border-top: 6px solid rgb(70, 70, 70);
+    }
+
+    .blockClickRed:hover {
+        border-left: 1px solid rgb(70, 70, 70);
+        border-top: 1px solid rgb(70, 70, 70);
+    }
+
+    .blockClickBlue:hover {
+        border-left: 1px solid rgb(70, 70, 70);
+        border-top: 1px solid rgb(70, 70, 70);
+    }
 }
